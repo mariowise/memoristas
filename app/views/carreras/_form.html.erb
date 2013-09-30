@@ -1,0 +1,25 @@
+<%= form_for(@carrera) do |f| %>
+  <% if @carrera.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@carrera.errors.count, "error") %> prohibited this carrera from being saved:</h2>
+
+      <ul>
+      <% @carrera.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre_carrera %><br>
+    <%= f.text_field :nombre_carrera %>
+  </div>
+  <div class="field">
+    <%= f.label :coordinador_carrera %><br>
+    <%= f.text_field :coordinador_carrera %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

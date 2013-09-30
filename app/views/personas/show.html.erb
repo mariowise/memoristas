@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Run persona:</strong>
+  <%= @persona.run_persona %>
+</p>
+
+<p>
+  <strong>Nombre persona:</strong>
+  <%= @persona.nombre_persona %>
+</p>
+
+<p>
+  <strong>Apellido persona:</strong>
+  <%= @persona.apellido_persona %>
+</p>
+
+<p>
+  <strong>Email persona:</strong>
+  <%= @persona.email_persona %>
+</p>
+
+<p>
+  <strong>Fono persona:</strong>
+  <%= @persona.fono_persona %>
+</p>
+
+<%= link_to 'Edit', edit_persona_path(@persona) %> |
+<%= link_to 'Back', personas_path %>

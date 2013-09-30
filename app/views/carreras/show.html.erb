@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre carrera:</strong>
+  <%= @carrera.nombre_carrera %>
+</p>
+
+<p>
+  <strong>Coordinador carrera:</strong>
+  <%= @carrera.coordinador_carrera %>
+</p>
+
+<%= link_to 'Edit', edit_carrera_path(@carrera) %> |
+<%= link_to 'Back', carreras_path %>

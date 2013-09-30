@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre_carrera: MyString
+  coordinador_carrera: MyString
+
+two:
+  nombre_carrera: MyString
+  coordinador_carrera: MyString
